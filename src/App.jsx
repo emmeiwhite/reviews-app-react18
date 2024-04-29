@@ -40,6 +40,7 @@ const App = () => {
           image={persons[currentIndex].image}
           text={persons[currentIndex].text}
           id={persons[currentIndex].id}
+          job={persons[currentIndex].job}
           handleNext={handleNext}
           handlePrev={handlePrev}
           handleSurprise={handleSurprise}

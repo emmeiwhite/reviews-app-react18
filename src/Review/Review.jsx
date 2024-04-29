@@ -21,6 +21,7 @@ export default function Review({
       </div>
 
       <h3> {name}</h3>
+      <h4>{job}</h4>
 
       <p>{text}</p>
 
