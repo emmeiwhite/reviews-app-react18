@@ -6,6 +6,8 @@ const App = () => {
   const [persons, setPersons] = useState(reviews);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const { image, job, text, id, name } = persons[currentIndex];
+
   const handlePrev = (id) => {
     console.log(id);
     const currentIndex = persons.findIndex((person) => person.id === id);
@@ -36,11 +38,11 @@ const App = () => {
     <main>
       <section className="container">
         <Review
-          name={persons[currentIndex].name}
-          image={persons[currentIndex].image}
-          text={persons[currentIndex].text}
-          id={persons[currentIndex].id}
-          job={persons[currentIndex].job}
+          name={name}
+          image={image}
+          text={text}
+          id={id}
+          job={job}
           handleNext={handleNext}
           handlePrev={handlePrev}
           handleSurprise={handleSurprise}
