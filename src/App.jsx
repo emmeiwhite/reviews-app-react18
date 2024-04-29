@@ -32,6 +32,10 @@ const App = () => {
 
   const handleSurprise = () => {
     const randomIndex = Math.floor(Math.random() * persons.length);
+    if (randomIndex === currentIndex) {
+      setCurrentIndex(randomIndex + 1);
+      return;
+    }
     setCurrentIndex(randomIndex);
   };
   return (

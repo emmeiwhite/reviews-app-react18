@@ -13,10 +13,11 @@ export default function Review({
 }) {
   return (
     <article className="review-card">
-      <div className="image-container">
+      <div className="img-container">
         <img
           src={image}
           alt={job}
+          className="person-img"
         />
       </div>
 
